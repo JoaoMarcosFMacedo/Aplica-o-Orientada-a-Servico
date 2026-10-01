@@ -1,0 +1,21 @@
+{
+  "name": "newaos",
+  "version": "1.0.0",
+  "description": "A new Node.js project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "João Marcos Freie Macedo",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@babel/core": "^8.0.6",
+    "@babel/node": "^8.0.6",
+    "@babel/preset-env": "^8.0.6",
+    "nodemon": "^3.1.14"
+  }
+}
+
