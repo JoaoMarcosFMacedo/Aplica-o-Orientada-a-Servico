@@ -3,12 +3,19 @@ import express from 'express';
 import cors from 'cors';
 import { sequelize } from './models/index.js';
 import userRoutes from './routes/userRoutes.js';
+import projetoRoutes from './routes/projetodRoutes.js';
+import profissionalRoutes from './routes/profissionalRoutes.js';
+import academicoRoutes from './routes/academicoRoutes.js';
+
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 app.use(userRoutes);
+app.use(projetoRoutes);
+app.use(profissionalRoutes);
+app.use(academicoRoutes);
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
